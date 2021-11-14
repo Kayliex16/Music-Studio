@@ -1,0 +1,139 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#hero {
+    width: 100%;
+    height: 100vh;
+    background-image:linear-gradient(rgba(0,0,0,0.5),transparent),url("Images/background.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.navbar {
+    width: 85%;
+    margin:auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    z-index: 10;
+}
+
+.navbar ul li {
+    display: inline-block;
+    margin: 10px 20px;
+    list-style: none;
+}
+
+.navbar ul li a {
+    color: #fff;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    color: #AFAFAF;
+}
+
+.logo {
+    margin-top:10px;
+    width: 69px;
+    cursor: pointer;
+}
+
+.container {
+    width: 50%;
+    height: 100vh;
+    background: (rgba 85,85,85,0.5);
+    backdrop-filter: blur(10px);
+    left: 0;
+    top: 0;
+    position: absolute;
+    
+}
+.info {
+     width: 550px;
+     color:#fff;
+     position: absolute;
+     transform: translateY(-40);
+     right: 0;
+     top: 40%;
+     margin-right: 50px;
+}
+
+.info h1 {
+     margin: auto;
+     font-size: 90px;
+     font-weight: bold;
+     font-family: 'Playfair Display SC', serif;
+     letter-spacing: 1px;
+     background-image: linear-gradient(128deg,#424242, #C4C4C4);
+     -webkit-background-clip: text;
+     -webkit-text-fill-color: transparent; 
+     -moz-background-clip: text;
+     -moz-text-fill-color: transparent;
+}
+
+.info p {
+    font-size: 18px;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+ .text-row {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.text-row a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border: 3px solid transparent;
+    -moz-border-image: -moz-linear-gradient( #424242, #C4C4C4);
+    -webkit-border-image: -webkit-linear-gradient( #424242, #C4C4C4);
+    border-image: linear-gradient(#424242, #C4C4C4);
+    border-image-slice: 1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    
+}
+
+@keyframes .animate__animated animate__fadeIn {
+    animation-duration: 10s;
+}
+
+.social-icons {
+    position: absolute;
+    right: 5%;
+    bottom: 8%;
+}
+
+.explore-btn {
+    transition: transform 0.5s;
+}
+
+.explore-btn:hover {
+    transform: scale(1.09);
+}
+
+.learn-btn {
+    transition: transform 0.5s;
+}
+
+.learn-btn:hover {
+    transform: scale(1.09); 
+}
+
+.social-icons img {
+    width: 25px;
+    display: block;
+    margin: 20px 2px;
+}
